@@ -12,160 +12,150 @@ proxy-providers:
     interval: 86400
 
 
+
 proxy-groups:
-   - name: Accelerate
-     type: select
-     proxies:
-      - Bygcloud
-      - Foo&Friends
-     use:
-      - FlowerCloud
+- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png
+  name: Accelerate
+  proxies:
+  - Bygcloud
+  - Foo&Friends
+  type: select
+  use:
+  - FlowerCloud
+- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Media.png
+  name: Streaming
+  proxies:
+  - Bygcloud
+  - Foo&Friends
+  type: select
+  use:
+  - FlowerCloud
+- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Area.png
+  name: Direct
+  proxies:
+  - DIRECT
+  - Accelerate
+  - Bygcloud
+  - Foo&Friends
+  type: select
+  use:
+  - FlowerCloud
+- icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
+  name: Telegram
+  proxies:
+  - Bygcloud
+  - Foo&Friends
+  type: select
+  use:
+  - FlowerCloud
+- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
+  name: Netflix
+  proxies:
+  - Bygcloud
+  - Foo&Friends
+  type: select
+  use:
+  - FlowerCloud
+- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney+.png
+  name: Disney+
+  proxies:
+  - Bygcloud
+  - Foo&Friends
+  type: select
+  use:
+  - FlowerCloud
+- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Prime_Video.png
+  name: PrimeVideo
+  proxies:
+  - Bygcloud
+  - Foo&Friends
+  type: select
+  use:
+  - FlowerCloud
+- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Windows_11.png
+  name: MicroSoft
+  proxies:
+  - DIRECT
+  - Bygcloud
+  - Foo&Friends
+  type: select
+  use:
+  - FlowerCloud
+- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_1.png
+  name: Apple
+  proxies:
+  - DIRECT
+  - Bygcloud
+  - Foo&Friends
+  type: select
+  use:
+  - FlowerCloud
+- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Steam.png
+  name: Game
+  proxies:
+  - DIRECT
+  - Bygcloud
+  - Foo&Friends
+  type: select
+  use:
+  - FlowerCloud
+- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Blinkload.png
+  name: PikPak
+  proxies:
+  - DIRECT
+  - Bygcloud
+  - Foo&Friends
+  type: select
+  use:
+  - FlowerCloud
+- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png
+  name: Emby
+  proxies:
+  - DIRECT
+  - Bygcloud
+  - Foo&Friends
+  type: select
+  use:
+  - FlowerCloud
+- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
+  name: Final
+  proxies:
+  - Accelerate
+  - DIRECT
+  - Bygcloud
+  - Foo&Friends
+  type: select
+  use:
+  - FlowerCloud
+- icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/GLaDOS.png
+  name: Bygcloud
+  proxies: []
+  type: select
+  use:
+  - Bygcloud
+- icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/FNF.png
+  name: Foo&Friends
+  proxies: []
+  type: select
+  use:
+  - Foo&Friends
 
-   - name: Direct Connect
-     type: select
-     proxies:
-      - DIRECT
-      - Accelerate    
-      - Bygcloud
-      - Foo&Friends
-     use:
-      - FlowerCloud
 
-   - name: Telegram
-     type: select
-     proxies:
-      - Bygcloud
-      - Foo&Friends
-     use:
-      - FlowerCloud
 
-   - name: Streaming
-     type: select
-     proxies:
-      - Bygcloud
-      - Foo&Friends
-     use:
-      - FlowerCloud
-
-   - name: Netflix
-     type: select
-     proxies:
-      - Bygcloud
-      - Foo&Friends
-     use:
-      - FlowerCloud
-
-   - name: Disney+
-     type: select
-     proxies:
-      - Bygcloud
-      - Foo&Friends
-     use:
-      - FlowerCloud
-
-   - name: PrimeVideo
-     type: select
-     proxies:
-      - Bygcloud
-      - Foo&Friends
-     use:
-      - FlowerCloud
-
-   - name: MicroSoft
-     type: select
-     proxies:
-      - DIRECT   
-      - Bygcloud
-      - Foo&Friends
-     use:
-      - FlowerCloud
-
-   - name: Apple
-     type: select
-     proxies:
-      - DIRECT   
-      - Bygcloud
-      - Foo&Friends
-     use:
-      - FlowerCloud
-
-   - name: Steam
-     type: select
-     proxies:
-      - DIRECT   
-      - Bygcloud
-      - Foo&Friends
-     use:
-      - FlowerCloud
-
-   - name: PikPak
-     type: select
-     proxies:
-      - DIRECT   
-      - Bygcloud
-      - Foo&Friends
-     use:
-      - FlowerCloud
-
-   - name: Emby
-     type: select
-     proxies:
-      - DIRECT   
-      - Bygcloud
-      - Foo&Friends
-     use:
-      - FlowerCloud
-
-   - name: Final
-     type: select
-     proxies:
-      - Accelerate   
-      - DIRECT   
-      - Bygcloud
-      - Foo&Friends
-     use:
-      - FlowerCloud
-
-   - name: Bygcloud
-     type: select
-     use:
-      - Bygcloud
-
-   - name: Foo&Friends
-     type: select
-     use:
-      - Foo&Friends
-
-  
 rule-providers:
   Telegram:
     behavior: classical
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml
     interval: 86400
 
-  Steam:
+  Game:
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam.yaml
-    interval: 86400
-
-  SteamCN:
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/SteamCN/SteamCN.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.yaml
     interval: 86400
 
   Microsoft:
     behavior: classical
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml
-    interval: 86400
-
-  Xbox:
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Xbox/Xbox.yaml
-    interval: 86400
-  
-  GitHub:
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml
     interval: 86400
 
   Apple:
@@ -203,54 +193,32 @@ rule-providers:
     url: https://raw.githubusercontent.com/YangXiaPeng/Personal/main/StashEmby.yaml
     interval: 86400
 
-  GlobalMedia:
+  ProxyMedia:
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia.yaml
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyMedia.yaml
     interval: 86400
 
-  GlobalMedia_Domain:
+  Proxy:
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy.yaml
+    interval: 86400
+
+  Proxy_Domain:
     behavior: domain-text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia_Domain.txt
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_Domain.txt
     interval: 86400
 
-  Google:
+  ChinaDomain:
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml
     interval: 86400
 
-  China:
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China.yaml
-    interval: 86400
-
-  China_Domain:
-    behavior: domain-text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China_Domain.txt
-    interval: 86400
-
-  ChinaIp:
-    behavior: ipcidr-text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaIPs/ChinaIPs_IP.txt
-    interval: 86400
-
-  Global:
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Global/Global.yaml
-    interval: 86400
-
-  Global_Domain:
-    behavior: domain-text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Global/Global_Domain.txt
-    interval: 86400
 
 
 rules:
   - RULE-SET,Telegram,Telegram
-  - RULE-SET,Steam,Steam
-  - RULE-SET,SteamCN,Steam
+  - RULE-SET,Game,Game
   - RULE-SET,Microsoft,Microsoft
-  - RULE-SET,Xbox,Microsoft
-  - RULE-SET,GitHub,Microsoft
   - RULE-SET,Apple,Apple
   - RULE-SET,Apple_Domain,Apple
   - RULE-SET,Netflix,Netflix
@@ -258,13 +226,9 @@ rules:
   - RULE-SET,PrimeVideo,PrimeVideo
   - RULE-SET,PikPak,PikPak
   - RULE-SET,Emby,Emby
-  - RULE-SET,GlobalMedia,Streaming
-  - RULE-SET,GlobalMedia_Domain,Streaming
-  - RULE-SET,Google,Accelerate
-  - RULE-SET,China,Direct Connect
-  - RULE-SET,China_Domain,Direct Connect
-  - RULE-SET,ChinaIp,Direct Connect,no-resolve
-  - RULE-SET,Global,Accelerate
-  - RULE-SET,Global_Domain,Accelerate
-  - GEOIP,CN,DIRECT
+  - RULE-SET,ProxyMedia,Streaming
+  - RULE-SET,Proxy,Accelerate
+  - RULE-SET,Proxy_Domain,Accelerate
+  - RULE-SET,ChinaDomain,Direct Connect
+  - GEOIP,CN,Direct Connect
   - MATCH,Final
