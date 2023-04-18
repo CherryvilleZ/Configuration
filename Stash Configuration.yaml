@@ -199,22 +199,22 @@ proxy-groups:
 rule-providers:
   Telegram:
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list?r_parser.list&nore=
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list?r_parser.list
     interval: 86400
 
   Game:
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Game/Game.list?r_parser.list&nore=
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Game/Game.list?r_parser.list
     interval: 86400
 
   Microsoft:
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Microsoft/Microsoft.list?r_parser.list&nore=
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Microsoft/Microsoft.list?r_parser.list
     interval: 86400
 
   Apple:
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Apple/Apple.list?r_parser.list&nore=
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Apple/Apple.list?r_parser.list
     interval: 86400
 
   Apple_Domain:
@@ -224,37 +224,37 @@ rule-providers:
 
   Netflix:
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Netflix/Netflix.list?r_parser.list&nore=
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Netflix/Netflix.list?r_parser.list
     interval: 86400
 
   Disney:
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Disney/Disney.list?r_parser.list&nore=
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Disney/Disney.list?r_parser.list
     interval: 86400
 
   PrimeVideo:
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/AmazonPrimeVideo/AmazonPrimeVideo.list?r_parser.list&nore=
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/AmazonPrimeVideo/AmazonPrimeVideo.list?r_parser.list
     interval: 86400
 
   PikPak:
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/PikPak/PikPak.list?r_parser.list&nore=
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/PikPak/PikPak.list?r_parser.list
     interval: 86400
 
   Emby:
     behavior: classical
-    url: https://raw.githubusercontent.com/CherryvilleZ/Configuration/main/EMBY.list?r_parser.list&nore=
+    url: https://raw.githubusercontent.com/CherryvilleZ/Configuration/main/EMBY.list?r_parser.list
     interval: 86400
 
   ProxyMedia:
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list?r_parser.list&nore=
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list?r_parser.list
     interval: 86400
 
   Proxy:
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Proxy/Proxy.list?r_parser.list&nore=
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Proxy/Proxy.list?r_parser.list
     interval: 86400
 
   Proxy_Domain:
@@ -264,7 +264,7 @@ rule-providers:
 
   ChinaDomain:
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list?r_parser.list&nore=
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list?r_parser.list
     interval: 86400
 
 
