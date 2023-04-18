@@ -10,7 +10,7 @@ benchmark-url: http://www.qualcomm.cn/generate_204
 #混合端口
 mixed-port: 7890
 #允许局域网
-allow-lan: true
+allow-lan: false
 #绑定地址
 bind-address: '*'
 #模式:rule（规则） / global（全局代理）/ direct（全局直连）
