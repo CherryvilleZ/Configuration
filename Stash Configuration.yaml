@@ -1,3 +1,56 @@
+# 更新于：20230401
+# 关注https://github.com/elnfnoosm/iOS_network
+# 使用说明：
+# 1、找到 {远程订阅} 部分，将MyProxy 的空缺替换为自己的机场订阅链接
+# 2、将下方subscribe-url同样替换为自己的机场订阅链接，可以让Stash获取机场流量信息并在主页显示
+subscribe-url: XXXX
+
+
+#混合端口
+mixed-port: 7890
+#允许局域网
+allow-lan: true
+#绑定地址
+bind-address: '*'
+#模式:rule（规则） / global（全局代理）/ direct（全局直连）
+mode: Rule
+#日志级别（日志输出级别：分级如后silent / info / warning / error / debug级别越高日志输出量越大）
+log-level: info
+#外部控制器
+external-controller: 127.0.0.1:9090
+
+#DNS设置
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  #DNS服务器
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  #DoH服务器
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  #列表中的域名将不会被解析为fake ip，这些域名相关的解析请求将会返回它们真实的IP地址
+  fake-ip-filter:
+    - '*.lan'
+    - localhost.ptlogin2.qq.com
+    - '+.srv.nintendo.net'
+    - '+.stun.playstation.net'
+    - '+.msftconnecttest.com'
+    - '+.msftncsi.com'
+    - '+.xboxlive.com'
+    - 'msftconnecttest.com'
+    - 'xbox.*.microsoft.com'
+    - '*.battlenet.com.cn'
+    - '*.battlenet.com'
+    - '*.blzstatic.cn'
+    - '*.battle.net'
+
+
+
 proxy-providers:
   FlowerCloud:
     url: 
@@ -90,7 +143,7 @@ proxy-groups:
   type: select
   use:
   - FlowerCloud
-- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Steam.png
+- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png
   name: Game
   proxies:
   - DIRECT
@@ -99,7 +152,7 @@ proxy-groups:
   type: select
   use:
   - FlowerCloud
-- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Blinkload.png
+- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/iCloud.png
   name: PikPak
   proxies:
   - DIRECT
@@ -145,22 +198,22 @@ proxy-groups:
 rule-providers:
   Telegram:
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list？r_parser.list&nore=
     interval: 86400
 
   Game:
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Game/Game.list？r_parser.list&nore=
     interval: 86400
 
   Microsoft:
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Microsoft/Microsoft.list？r_parser.list&nore=
     interval: 86400
 
   Apple:
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Apple/Apple.list？r_parser.list&nore=
     interval: 86400
 
   Apple_Domain:
@@ -170,37 +223,37 @@ rule-providers:
 
   Netflix:
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Netflix/Netflix.list？r_parser.list&nore=
     interval: 86400
 
   Disney:
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Disney/Disney.list？r_parser.list&nore=
     interval: 86400
 
   PrimeVideo:
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AmazonPrimeVideo/AmazonPrimeVideo.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/AmazonPrimeVideo/AmazonPrimeVideo.list？r_parser.list&nore=
     interval: 86400
 
   PikPak:
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PikPak/PikPak.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/PikPak/PikPak.list？r_parser.list&nore=
     interval: 86400
 
   Emby:
     behavior: classical
-    url: https://raw.githubusercontent.com/YangXiaPeng/Personal/main/StashEmby.yaml
+    url: https://raw.githubusercontent.com/CherryvilleZ/Configuration/main/EMBY.list？r_parser.list&nore=
     interval: 86400
 
   ProxyMedia:
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyMedia.yaml
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list？r_parser.list&nore=
     interval: 86400
 
   Proxy:
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Proxy/Proxy.list？r_parser.list&nore=
     interval: 86400
 
   Proxy_Domain:
@@ -210,7 +263,7 @@ rule-providers:
 
   ChinaDomain:
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list？r_parser.list&nore=
     interval: 86400
 
 
@@ -229,6 +282,6 @@ rules:
   - RULE-SET,ProxyMedia,Streaming
   - RULE-SET,Proxy,Accelerate
   - RULE-SET,Proxy_Domain,Accelerate
-  - RULE-SET,ChinaDomain,Direct Connect
-  - GEOIP,CN,Direct Connect
+  - RULE-SET,ChinaDomain,Direct
+  - GEOIP,CN,Direct
   - MATCH,Final
