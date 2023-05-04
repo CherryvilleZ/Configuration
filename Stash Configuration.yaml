@@ -57,11 +57,7 @@ proxy-providers:
     url: 
     interval: 86400
  
-  Bygcloud:
-    url: 
-    interval: 86400
-
-  Foo&Friends:
+  Select:
     url: 
     interval: 86400
 
@@ -71,16 +67,14 @@ proxy-groups:
 - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png
   name: Accelerate
   proxies:
-  - Bygcloud
-  - Foo&Friends
+  - Select
   type: select
   use:
   - FlowerCloud
 - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Media.png
   name: Streaming
   proxies:
-  - Bygcloud
-  - Foo&Friends
+  - Select
   type: select
   use:
   - FlowerCloud
@@ -89,40 +83,28 @@ proxy-groups:
   proxies:
   - DIRECT
   - Accelerate
-  - Bygcloud
-  - Foo&Friends
+  - Select
   type: select
   use:
   - FlowerCloud
 - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
   name: Telegram
   proxies:
-  - Bygcloud
-  - Foo&Friends
+  - Select
   type: select
   use:
   - FlowerCloud
 - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
   name: Netflix
   proxies:
-  - Bygcloud
-  - Foo&Friends
+  - Select
   type: select
   use:
   - FlowerCloud
 - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney+.png
   name: Disney+
   proxies:
-  - Bygcloud
-  - Foo&Friends
-  type: select
-  use:
-  - FlowerCloud
-- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Prime_Video.png
-  name: PrimeVideo
-  proxies:
-  - Bygcloud
-  - Foo&Friends
+  - Select
   type: select
   use:
   - FlowerCloud
@@ -130,8 +112,7 @@ proxy-groups:
   name: MicroSoft
   proxies:
   - DIRECT
-  - Bygcloud
-  - Foo&Friends
+  - Select
   type: select
   use:
   - FlowerCloud
@@ -139,8 +120,7 @@ proxy-groups:
   name: Apple
   proxies:
   - DIRECT
-  - Bygcloud
-  - Foo&Friends
+  - Select
   type: select
   use:
   - FlowerCloud
@@ -148,17 +128,7 @@ proxy-groups:
   name: Game
   proxies:
   - DIRECT
-  - Bygcloud
-  - Foo&Friends
-  type: select
-  use:
-  - FlowerCloud
-- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/iCloud.png
-  name: PikPak
-  proxies:
-  - DIRECT
-  - Bygcloud
-  - Foo&Friends
+  - Select
   type: select
   use:
   - FlowerCloud
@@ -166,8 +136,7 @@ proxy-groups:
   name: Emby
   proxies:
   - DIRECT
-  - Bygcloud
-  - Foo&Friends
+  - Select
   type: select
   use:
   - FlowerCloud
@@ -176,23 +145,16 @@ proxy-groups:
   proxies:
   - Accelerate
   - DIRECT
-  - Bygcloud
-  - Foo&Friends
+  - Select
   type: select
   use:
   - FlowerCloud
 - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/GLaDOS.png
-  name: Bygcloud
+  name: Select
   proxies: []
   type: select
   use:
-  - Bygcloud
-- icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/FNF.png
-  name: Foo&Friends
-  proxies: []
-  type: select
-  use:
-  - Foo&Friends
+  - Select
 
 
 
@@ -230,11 +192,6 @@ rule-providers:
   Disney:
     behavior: classical
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Disney/Disney.list?r_parser.list
-    interval: 86400
-
-  PrimeVideo:
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/AmazonPrimeVideo/AmazonPrimeVideo.list?r_parser.list
     interval: 86400
 
   PikPak:
@@ -277,8 +234,7 @@ rules:
   - RULE-SET,Apple_Domain,Apple
   - RULE-SET,Netflix,Netflix
   - RULE-SET,Disney,Disney+
-  - RULE-SET,PrimeVideo,PrimeVideo
-  - RULE-SET,PikPak,PikPak
+  - RULE-SET,PikPak,Emby
   - RULE-SET,Emby,Emby
   - RULE-SET,ProxyMedia,Streaming
   - RULE-SET,Proxy,Accelerate
