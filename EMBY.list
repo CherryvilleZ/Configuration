@@ -1,11 +1,8 @@
 #Emby终点站
-DOMAIN-SUFFIX,pub1.emby.wtf
-DOMAIN-SUFFIX,pub2.emby.wtf
-DOMAIN-SUFFIX,pub3.emby.wtf
-DOMAIN-SUFFIX,pub4.emby.wtf
+DOMAIN-SUFFIX,emby.wtf
 
 #卷毛鼠
-DOMAIN-SUFFIX,cf.jmsooo.com
+DOMAIN-SUFFIX,jmsooo.com
 
 #Misaka
 DOMAIN-SUFFIX,emby.misakaf.org
