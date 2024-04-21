@@ -1,13 +1,6 @@
 #Emby终点站
 DOMAIN-SUFFIX,emby.wtf
 
-#卷毛鼠
-DOMAIN-SUFFIX,jmsooo.com
-
 #Misaka
 DOMAIN-SUFFIX,emby.misakaf.org
 DOMAIN-SUFFIX,cdn.misakaf.org
-
-#eggtart
-DOMAIN-SUFFIX,emby.eggtartcloud.shop
-DOMAIN-SUFFIX,vip3.jellyfin.asia
