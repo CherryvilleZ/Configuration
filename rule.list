@@ -1,6 +1,6 @@
-DOMAIN-SUFFIX,ceic.asia
+DOMAIN-KEYWORD,ceic
 IP-CIDR,38.207.168.242/32
-DOMAIN-SUFFIX,ylshenhua.com
-IP-CIDR,10.172.117.10/16,no-resolve
-DOMAIN-SUFFIX,chnenergy.com.cn
-DOMAIN-SUFFIX,ceic.com
+DOMAIN-KEYWORD,shenhua
+IP-CIDR,10.172.117.10/8,no-resolve
+DOMAIN-KEYWORD,chnenergy
+DOMAIN-KEYWORD,shendong
