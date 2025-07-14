@@ -1,6 +1,7 @@
 DOMAIN-SUFFIX,ceic.com
 IP-CIDR,104.224.158.184/32
 DOMAIN-SUFFIX,shenhua.com
+DOMAIN-SUFFIX,ylshenhua.com
 IP-CIDR,10.172.117.10/8,no-resolve
 DOMAIN-SUFFIX,chnenergy.com.cn
 DOMAIN-SUFFIX,shendong.cc
