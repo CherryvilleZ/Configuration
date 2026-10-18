@@ -1,0 +1,24 @@
+# ==================== ima / WorkBuddy 域名集合 ====================
+# 用途：统一维护当前配置中 ima、WorkBuddy 及其配套国内服务的域名。
+# 来源：你提供的最终配置 ImmTele(1).yaml；保留原有 7 条域名范围。
+# 格式：Mihomo rule-provider，behavior: classical，format: text。
+# 每行仅写规则类型和域名，不写 DIRECT、策略组名或 DNS 地址。
+# DOMAIN-SUFFIX 同时匹配根域名及其所有子域名。
+# 主配置可引用同一集合，用于直连分流、指定 DNS、排除 Fake-IP 和跳过嗅探。
+# DNS 服务器由主配置指定；本名单不自动把解析改为 system，也不会修改系统代理绕过设置。
+#
+# ==================== ima 主站与专属资源 ====================
+DOMAIN-SUFFIX,ima.qq.com
+DOMAIN-SUFFIX,ima.tencent.com
+DOMAIN-SUFFIX,ima.myqcloud.com
+DOMAIN-SUFFIX,ima-app.image.myqcloud.com
+
+# ==================== WorkBuddy 与配套国内服务 ====================
+DOMAIN-SUFFIX,workbuddy.cn
+DOMAIN-SUFFIX,codebuddy.cn
+DOMAIN-SUFFIX,copilot.tencent.com
+
+# ==================== 后续维护 ====================
+# 新增同类域名时，在上面追加 DOMAIN-SUFFIX,实际域名 即可。
+# 不要填 https://、网址路径、端口或 *. 前缀；保持每行两个字段。
+# 第三方插件、海外模型 API 等沿用主配置原有分流，不在此集合扩大直连范围。
