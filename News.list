@@ -34,4 +34,4 @@ DOMAIN-KEYWORD,voachinese
 
 #服务器
 DOMAIN-SUFFIX,ylshenhua.cn
-IP-CIDR,104.224.158.184/32,no-resolve
+#IP-CIDR,104.224.158.184/32,no-resolve
